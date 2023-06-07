@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "UTF-8">
+		<style>
+		
+			*	{ 
+					box-sizing:border-box; 
+					text-align:center;
+					
+					}
+			
+			#test	{
+			
+					outline: none;
+					box-shadow: none;
+					border-style: solid;
+					width: 100%;
+					max-width: 500px;
+					padding: 20px;
+					text-align:left;
+					
+					}
+					
+			#showText, #copyText	{ display:block; height:auto; }
+			#counter { display:none; height:auto;} 
+			#charsRemaining { display:none; height:auto; }
+			
+			.counter_fields_container {
+				display:flex;
+				flex-direction:row;
+				
+			}
+			
+			.data_fields	{
+				
+				position:relative;
+				width:100%;
+				max-width:500px;
+				height:auto;
+				background-color:#000000; 
+				color:#fff; 
+				border:solid 5px gold; 
+				border-radius:10px;
+				margin:20px auto;
+				padding:20px; 
+				text-align:center; 
+				overflow:auto;
+				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+	<section class="main">
+	<h2>Character Counter by Manoj Kumar</h2>
+	<h3>Display character counter from text field in the below div</h3>
+	<textarea type="text" id="test" rows="10" cols="40"></textarea>
+	
+		<div class="data_fields" id="showText"></div>
+	<div class="counter_fields_container">
+		<div class="data_fields" id="counter"></div>
+		<div class="data_fields" id="charsRemaining"></div>
+	</div>
+	
+	</section>
+	<script src="chars1.js"></script>
+
+</body>
+</html>
